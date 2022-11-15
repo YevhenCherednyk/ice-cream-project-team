@@ -1,0 +1,32 @@
+// утиліти
+@import './utils/variables';
+@import './utils/placeholders';
+@import './utils/visually-hidden';
+
+// базові налаштування
+@import './base/reset';
+@import './base/typography';
+@import './base/common';
+
+// компонети
+@import './components/buttons';
+@import './components/btn-up';
+@import './components/menu-mobile';
+@import './components/modal';
+
+
+// секції макету
+@import './layout/header';
+@import './layout/hero';
+@import './layout/products';
+@import './layout/about';
+@import './layout/advantages';
+@import './layout/gallery';
+@import './layout/reviews';
+@import './layout/contacts';
+@import './layout/footer';
+
+@import './layout/modal-read';
+@import './layout/modal-locations';
+@import './layout/modal-franchise';
+@import './layout/modal-buy';

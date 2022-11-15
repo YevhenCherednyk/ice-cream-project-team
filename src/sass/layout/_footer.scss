@@ -1,0 +1,156 @@
+.footer {
+  background-color: var(--color__footer-bg);
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 60px;
+  }
+}
+
+.footer__bloc {
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media screen and (min-width: 1200px) {
+    align-items: flex-end;
+    margin-bottom: 60px;
+  }
+}
+
+.footer__title-wrap {
+  width: 234px;
+
+  @media screen and (min-width: 768px) {
+    width: 340px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 500px;
+  }
+}
+
+.footer__uppertitle {
+  margin-bottom: 16px;
+
+  text-align: start;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 12px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 16px;
+  }
+}
+
+.footer__title {
+  text-align: start;
+
+  @media screen and (max-width: 767.5px) {
+    margin-bottom: 40px;
+    width: 200px;
+    height: 76px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 500px;
+  }
+}
+
+.social-links {
+  display: flex;
+  justify-content: flex-end;
+  gap: 28px;
+
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199.5px) {
+    margin-top: 60px;
+  }
+}
+
+.social-links__item {
+  width: 32px;
+  height: 32px;
+}
+
+.social-links__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+
+  color: var(--color__w);
+  border-radius: 50%;
+  background-color: var(--color__socials);
+  transform: scale(1);
+  transition: background-color var(--main__transition),
+    scale var(--main__transition);
+}
+
+.social-links__link:hover,
+.social-links__link:focus {
+  background-color: var(--color__accent-first);
+  transform: scale(1.1);
+}
+
+.social-links__icon {
+  fill: currentColor;
+}
+
+.tel {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.86;
+  text-align: right;
+}
+.tel__title {
+  display: inline-block;
+}
+
+.tel__number {
+  color: var(--color__accent-first);
+}
+
+.copyrigh {
+  display: flex;
+  align-items: center;
+  height: 61px;
+
+  border-top: 1px solid #e1e1e1;
+
+  @media screen and (min-width: 768px) {
+    height: 33px;
+  }
+}
+
+.copyrigh__info {
+  height: 100%;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-left: auto;
+  margin-right: auto;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.52;
+  text-align: center;
+
+  color: var(--color__contact);
+
+  @media screen and (max-width: 767.5px) {
+    padding-top: 16px;
+    padding-bottom: 3px;
+    width: 150px;
+  }
+}

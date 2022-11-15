@@ -1,0 +1,31 @@
+%cardSet {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap);
+}
+
+%cardSet__item {
+  flex-basis: calc((100% - var(--gap) * (var(--items) - 1)) / var(--items));
+}
+
+%transition__scroll {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity var(--transition__scroll), transform var(--transition__scroll);
+}
+
+%transition__scroll--active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+%transition__hover {
+  transform: scale(1.06);
+  transition: all var(--transition__hover);
+}
+
+%flex {
+  display: flex;
+  align-items: center;  
+  justify-content: var(--flex__jc);
+}

@@ -1,0 +1,52 @@
+<div class="backdrop is-hidden" data-modal--read>
+  <div class="modal modal--read">
+    <button
+      class="modal-btn__close modal__close-btn--read"
+      type="button"
+      data-modal-close--read
+    >
+      <svg
+        class="modal__close-icon modal__close-icon--read"
+        width="18"
+        height="18"
+      >
+        <use href="./images/close.svg#icon-close"></use>
+      </svg>
+    </button>
+    <div class="read-more__pictures">
+      <p class="read-more__logo title">Milk & <br />Honey</p>
+
+      <picture>
+        <source
+          media="(min-width:320px )"
+          srcset="
+            ./images/about/milk_200.png 1x,
+            ./images/about/milk_400.png 2x
+          "
+          type="image/png"
+        />
+        <img
+          class="read-more__img"
+          src="./images/about/milk_200.png"
+          alt="milk"
+          height="220"
+        />
+      </picture>
+    </div>
+    <p class="read-more__text">
+      Milk is a good source of many essential nutrients, including calcium,
+      protein, and vitamin D. Many people see it as a vital part of a balanced
+      diet. Others, however, cite various reasons for choosing not to consume
+      it. Sources of milk and milk products include cows, sheep, camels, goats,
+      and many others.
+    </p>
+
+    <button
+      class="read-more__close-button"
+      type="button"
+      data-modal-read--close
+    >
+      Thanks
+    </button>
+  </div>
+</div>

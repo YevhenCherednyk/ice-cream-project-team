@@ -1,0 +1,81 @@
+.menu-mobile {
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 10;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+
+	width: 250px;
+	height: 100vh;
+	padding: 20px;
+
+	background-color:var(--color__mob-menu-bg);
+	filter: drop-shadow(-8px 0px 20px rgba(0, 0, 0, 0.25));
+	transform: translateX(150%);
+	transition: var(--main__transition);
+	
+	&.is-open  {
+		transform: translateX(0);
+	}
+
+	@media screen and (min-width: 768px) {
+		width: 254px;
+	}
+
+	@media screen and (min-width: 1200px) {
+		display: none;
+	}
+}
+	
+.menu-mobile .btn-menu {
+	width: 14px;
+	height: 14px;
+	margin-left: auto;
+
+	@media screen and (min-width: 768px) {
+		margin-right: 12px;
+	}
+}
+
+.menu-mobile .nav{
+	display: flex;
+	margin-right: auto;
+}
+
+.menu-mobile .nav__list {
+	flex-direction: column;
+	align-items: flex-start;
+	margin: 0 -20px;
+}
+
+.menu-mobile .nav__item {
+	min-width: 254px;
+}
+
+.menu-mobile .nav__item{
+	border-top: 1px solid var(--color__mob-menu-line);
+
+	&:last-child {
+		border-bottom: 1px solid var(--color__mob-menu-line);
+	}
+}
+
+.menu-mobile .nav__link {
+	display: block;
+	padding: 12px 20px;
+
+	font-size: 14px;
+	line-height: 1.29;
+}
+
+.menu-mobile .button--buy {
+	width: 100%;
+
+	@media screen and (min-width: 768px) {
+		width: 186px;
+	}
+}
