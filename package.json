@@ -2,10 +2,10 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://GolovinD.github.io/project-group7",
+  "homepage": "https://YevhenCherednyk.github.io/ice-cream-project-team",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /project-group7/"
+    "build": "parcel build src/*.html --public-url /ice-cream-project-team/"
   },
   "repository": {
     "type": "git",

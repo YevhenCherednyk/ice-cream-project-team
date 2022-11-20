@@ -1,6 +1,6 @@
 // Hero-title animation
 
-var hotbod = document.querySelector("body");
+const hotbod = document.querySelector("body");
 function doStuff() {
     hotbod.className += " animate";
 }
